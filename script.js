@@ -23,36 +23,25 @@ function verifyLength() {
       
 
   // Function to ask for lowercase characters
-  else{
-    if (confirm ('Would you like to include lowercase characters?') === true)
-        lowerCaseFunction == true
-        if (lowerCaseFunction === false){
-          alert ('Please select at least one character')
-        }
-  }
-  
-   // Function to ask for uppercase characters
-    if (window.prompt ('Would you like to include uppercase characters?') === true)
-        upperCaseFunction == true
-        if (upperCaseFunction === false){
-          alert ('Please select at least one character')
-        }
+  function verifyLowerCase (){
+    confirmLowerCase = window.prompt ('Would you like to include lowercase characters?');
+      confirmLowerCase = confirmLowerCase.toUpperCase();
+
+  if (confirmLowerCase === "yes, y"){
+    confirmLowerCase = true;
+    return confirmLowerCase;
   }
 
-   // Function to ask for special characters
-   if (window.prompt ('Would you like to include special characters?') === true)
-   specialFunction == true
-   if (specialFunction === false){
-     alert ('Please select at least one character')
-   }
+  else if (confirmLowerCase === "no, n"){
+    confirmLowerCase = false;
+    return confirmLowerCase;
+  }
 
-
- // Function to ask for number characters
-    if (window.prompt ('Would you like to include number characters?') === true)
-        numbersFunction == true
-        if (numbersFunction === false){
-          alert ('Please select at least one character')
-        }
+  else {
+    alert ('Please answer Yes or No');
+    verifyLowerCase();
+  }
+    return confirmLowerCase;
+  }
   
-
-  
+   
