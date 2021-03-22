@@ -112,6 +112,8 @@ function createPassword(){
   console.log(passwordLength);
   verifyLowerCase();
   console.log(confirmLowerCase);
+  verifyUpperCase();
+  console.log(confirmUpperCase);
   verifySpecialChar();
   console.log(confirmSpecialChar);
   verifyNumbersChar();
