@@ -44,18 +44,11 @@ function writePassword() {
         }
   }
 
-
-
-
-  
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+   // Function to ask for special characters
+   if (window.prompt ('Would you like to include special characters?') === true)
+   specialCaseFunction == true
+   if (specialCaseFunction === false){
+     alert ('Please select at least one character')
+   }
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-var generateBtn = document.querySelector("#generate");
