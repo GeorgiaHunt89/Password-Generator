@@ -15,8 +15,11 @@ function writePassword() {
   var passwordlength = '#password';
 
   // Function to ask for password length 
-  if(passwordlength >= 8 && passwordlength <=128){
-    alert ("Please enter length of password, must be between 8 and 128 characters")
+  While (passwordlength >= 8 && passwordlength <=128){
+    passwordlength = prompt ("Please enter length of password, (must be between 8 and 128 characters)") 
+      if (passwordlength === undefined){
+        passwordlength = prompt ("Incorrect character length, please enter a number between 8 and 128")
+      }
   }
   
   var password = generatePassword();
