@@ -10,9 +10,6 @@ var confirmLowerCase;
 var confirmUpperCase;
 var confirmNumbersChar;
 var confirmSpecialChar;
-var allChars = [];
-var password = '';
-
 
 
 // Function to generate random #password input
@@ -125,12 +122,15 @@ function characters(){
   console.log(confirmSpecialChar);
   verifyNumbersChar();
   console.log(confirmNumbersChar);
+
+var allChars = [];
+var password = "";
 }
 
 // For loop function used to generate password
-function writePassword (passwordlenght, characters){
+function writePassword (passwordLength, allChars){
   for(var i = 0; i < passwordLength; i++){
-  password += characters.charAt(Math.floor(Math.random() * characters.length)); 
+  password += allChar.charAt(Math.floor(Math.random() * allChars.length)); 
 }
 return password;
 }
@@ -142,6 +142,10 @@ function createPassword (){
   firstpassword = characters ();
   var passwordtext = documnet.querySelector ('#password');
   passwordtext.value = firstpassword;
+
+
+  // Event Listener button
+  generateBtn.addEventListener("Click", createPassword);
 
 
 }
