@@ -10,6 +10,8 @@ var confirmLowerCase;
 var confirmUpperCase;
 var confirmNumbersChar;
 var confirmSpecialChar;
+var password = "";
+var userChoices = {};
 
 
 // Function to generate random #password input
@@ -111,7 +113,7 @@ function verifyLength() {
   }
 
   // Function to collate all previous results and generate a random password
-function characters(){
+var userChoices {
   verifyLength ();
   console.log(passwordLength);
   verifyLowerCase();
@@ -123,14 +125,13 @@ function characters(){
   verifyNumbersChar();
   console.log(confirmNumbersChar);
 
-var allChars = [];
-var password = "";
 }
 
 // For loop function used to generate password
-function writePassword (passwordLength, allChars){
+function writePassword (){
+  let password = '';
   for(var i = 0; i < passwordLength; i++){
-  password += allChar.charAt(Math.floor(Math.random() * allChars.length)); 
+  password += userChoices.charAt(Math.floor(Math.random() * userChoices.length)); 
 }
 return password;
 }
