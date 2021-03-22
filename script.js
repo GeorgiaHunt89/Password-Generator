@@ -65,5 +65,27 @@ function verifyLength() {
   }
     return confirmSpecialChar;
   }
+
+  // Function to ask for numbers characters
+  function verifyNumbersChar (){
+    confirmNumbersChar = window.prompt ('Would you like to include number characters?\nYes or No');
+      confirmNumbersChar = confirmNumbersChar.toUpperCase();
+
+  if (confirmNumbersChar === "yes, y"){
+    confirmNumbersChar = true;
+    return confirmNumbersChar;
+  }
+
+  else if (confirmNumbersChar === "no, n"){
+    confirmNumbersChar = false;
+    return confirmNumbersChar;
+  }
+
+  else {
+    alert ('Please answer Yes or No');
+    verifyNumbersChar();
+  }
+    return confirmNumbersChar;
+  }
   
    
