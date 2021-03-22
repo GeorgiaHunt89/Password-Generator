@@ -25,8 +25,7 @@ function verifyLength() {
   // Function to ask for lowercase characters
   function verifyLowerCase (){
     confirmLowerCase = window.prompt ('Would you like to include lowercase characters?\nYes or No');
-      confirmLowerCase = confirmLowerCase.toUpperCase();
-
+      
   if (confirmLowerCase === "yes, y"){
     confirmLowerCase = true;
     return confirmLowerCase;
@@ -47,8 +46,7 @@ function verifyLength() {
    // Function to ask for special characters
    function verifySpecialChar (){
     confirmSpecialChar = window.prompt ('Would you like to include special characters?\nYes or No');
-      confirmSpecialChar = confirmSpecialChar.toUpperCase();
-
+      
   if (confirmSpecialChar === "yes, y"){
     confirmSpecialChar = true;
     return confirmSpecialChar;
@@ -69,8 +67,7 @@ function verifyLength() {
   // Function to ask for numbers characters
   function verifyNumbersChar (){
     confirmNumbersChar = window.prompt ('Would you like to include number characters?\nYes or No');
-      confirmNumbersChar = confirmNumbersChar.toUpperCase();
-
+      
   if (confirmNumbersChar === "yes, y"){
     confirmNumbersChar = true;
     return confirmNumbersChar;
@@ -87,5 +84,15 @@ function verifyLength() {
   }
     return confirmNumbersChar;
   }
-  
-   
+
+  // Function to collate all previous results and generate a random password
+function createPassword(){
+  verifyLength ();
+  console.log(passwordLength);
+  verifyLowerCase();
+  console.log(confirmLowerCase);
+  verifySpecialChar();
+  console.log(confirmSpecialChar);
+  verifyNumbersChar();
+  console.log(confirmNumbersChar);
+}
