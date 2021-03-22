@@ -16,7 +16,7 @@ var userChoices = [];
 // Function to ask for password length 
 function verifyLength() {
   passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters.)');
-  if (passwordLength < 8 || passwordLength > 128);{
+  if (passwordLength < 8 || passwordLength > 128){
     alert ('Incorrect character length!\nA number between 8 and 128 must be entered.\nPlease start from the beginning.');
     verifyLength();
   } 
@@ -25,13 +25,13 @@ function verifyLength() {
 
 // Function to ask for lowercase characters
 function verifyLowerCase() {
-  confirmLowerCase = window.prompt ('Would you like to include lowercase characters?\nYes or No');
+  confirmLowerCase = window.confirm ('Would you like to include lowercase characters?\nYes or No');
       
-  if (confirmLowerCase === "yes, y"){
+  if (confirmLowerCase === true){
     confirmLowerCase = true;
     }
 
-  else if (confirmLowerCase === "no, n"){
+  else if (confirmLowerCase === false){
     confirmLowerCase = false;
     }
 
@@ -43,7 +43,7 @@ function verifyLowerCase() {
 
 // Function to ask for uppercase characters
 function verifyUpperCase(){
-  confirmUpperCase = window.prompt ('Would you like to include uppercase characters?\nYes or No');
+  confirmUpperCase = window.confirm ('Would you like to include uppercase characters?\nYes or No');
       
   if (confirmUpperCase === "yes, y"){
       confirmUpperCase = true;
@@ -61,7 +61,7 @@ function verifyUpperCase(){
 
 // Function to ask for special characters
 function verifySpecialChar (){
-  confirmSpecialChar = window.prompt ('Would you like to include special characters?\nYes or No');
+  confirmSpecialChar = window.confirm ('Would you like to include special characters?\nYes or No');
       
   if (confirmSpecialChar === "yes, y"){
     confirmSpecialChar = true;
@@ -79,7 +79,7 @@ function verifySpecialChar (){
 
 // Function to ask for numbers characters
 function verifyNumbersChar (){
-  confirmNumbersChar = window.prompt ('Would you like to include number characters?\nYes or No');
+  confirmNumbersChar = window.confirm ('Would you like to include number characters?\nYes or No');
       
   if (confirmNumbersChar === "yes, y"){
     confirmNumbersChar = true;
@@ -152,7 +152,7 @@ function generatePassword() {
 function createPassword () {
   var newpassword = "";
   newpassword = generatePassword();
-  var passwordtext = documnet.querySelector ('#password');
+  var passwordtext = document.querySelector ('#password');
   passwordtext.value = newpassword;
 
 }
