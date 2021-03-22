@@ -7,6 +7,13 @@ var numbers = '1234567890';
 
 var password = ['#password'];
 
+// Uppercase, Lowercase, numbers and Special icon Function Booleans
+
+var lowerCaseFunction = 'false'
+var upperCaseFunction = 'false'
+var specialFunction = 'false'
+var numbersFunction = 'false'
+
 // Function to create random #password input
 
 function writePassword() {
