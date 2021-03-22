@@ -46,9 +46,18 @@ function writePassword() {
 
    // Function to ask for special characters
    if (window.prompt ('Would you like to include special characters?') === true)
-   specialCaseFunction == true
-   if (specialCaseFunction === false){
+   specialFunction == true
+   if (specialFunction === false){
      alert ('Please select at least one character')
    }
 }
 
+ // Function to ask for number characters
+    if (window.prompt ('Would you like to include number characters?') === true)
+        numbersFunction == true
+        if (numbersFunction === false){
+          alert ('Please select at least one character')
+        }
+  }
+
+  
