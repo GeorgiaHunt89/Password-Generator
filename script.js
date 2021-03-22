@@ -5,7 +5,7 @@ var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special = '!@#$%^&*';
 var numbers = '1234567890';
 
-var password = ['#password'];
+var password = [''];
 
 // Uppercase, Lowercase, numbers and Special icon Function Booleans
 
@@ -17,7 +17,7 @@ var numbersFunction = 'false'
 // Function to create random #password input
 
 function writePassword() {
-  var passwordLength = '#password';
+  var passwordLength = '';
 
   // Function to ask for password length 
   Const (passwordLength >= 8 && passwordLength <=128);{
@@ -31,6 +31,9 @@ function writePassword() {
   if (passwordLength){
     if (window.prompt ('Would you like to include lowercase characters?') === true)
         lowerCaseFunction == true
+        if (lowerCaseFunction === false){
+          alert ('Please select at least one character')
+        }
   }
   
   var password = generatePassword();
