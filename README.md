@@ -22,16 +22,16 @@ https://georgiahunt89.github.io/Password-Generator/Index.html
 
 ## What I learnt
 While creating this application I learnt the fundamental aspects of JavaScript. As displayed in my commits, I began by:
-- defining the variables for the user input.
-- then created the passwordlength min and max input and alert.
-- then created the function for lowercase characters, uppercase characters, special characters and number characters.
-- it was during this point that I over complicated the function and created an infinite loop in each input by creating a window prompt rather than a window confirm which required users to input yes for true then returning the function before adding the else if no.
-- I then implemented consol logs for each function.
-- added the eventslistener.
-- added the missing function createPassword to connect allChars and return writePassword.
--  discovered the infinate loops and realised the unnecessary coding, changed all input catagories from window prompt to window confirm which resulted in the removal of all else if statements.
+- Defined the variables for the user input.
+- Created the passwordlength min and max input and alert.
+- Created the function for lowercase characters, uppercase characters, special characters and number characters.
+- During this point I over complicated the function and created an infinite loop in each input catagory by creating a window.prompt rather than a window.confirm which required users to input yes for true then return the function before adding the else if no then returning the function once again.
+- Implemented consol logs for each function.
+- Added the eventslistener.
+- Added the missing function createPassword to connect allChars and return writePassword.
+- Discovered the infinate loops and realised the unnecessary coding, changed all input catagories from window prompt to window confirm which resulted in the removal of all else if statements.
 
-During the creation I learnt value and how to correctly implement variables, arrays, functions, for loops, eventlisteners, and the best practices for naming variables and functions.
+During the creation I learnt value, and how to correctly implement variables, arrays, functions, for loops, eventlisteners, and the best practices for naming variables and functions.
 
 This application has given me a base level understanding of JavaScript which I hope to continue to expand upon.
 
@@ -42,9 +42,9 @@ This application has given me a base level understanding of JavaScript which I h
 
 ![Password-length-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Password-length-prompt.png)
 
-![Lowercase-characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Lowercase-characters-prompt.png)
+![Lowercase-characters-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Lowercase-characters-prompt.png)
 
-![Number-Character-Prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Number-Character-Prompt.png)
+![Number-Character-Prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Number-Character-Prompts.png)
 
 ![Special-Characters-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Special-Characters-prompt.png)
 
