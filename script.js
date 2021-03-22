@@ -1,13 +1,21 @@
 // Uppercase, Lowercase, numbers and Special icon variables 
 
+var generateBtn = document.querySelector('#generate')
 var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special = '!@#$%^&*';
 var numbers = '1234567890';
+var passwordLength;
+var confirmLowerCase;
+var confirmUpperCase;
+var confirmNumbersChar;
+var confirmSpecialChar;
+var allChars = [];
 var password = '';
 
-// Function to create random #password input
 
+
+// Function to generate random #password input
   
 
   // Function to ask for password length 
@@ -120,9 +128,20 @@ function characters(){
 }
 
 // For loop function used to generate password
-function createPassword (passwordlenght, characters){
+function writePassword (passwordlenght, characters){
   for(var i = 0; i < passwordLength; i++){
   password += characters.charAt(Math.floor(Math.random() * characters.length)); 
 }
 return password;
+}
+
+// Function to connect create Password to querySelector
+
+function createPassword (){
+  var firstpassword = "";
+  firstpassword = characters ();
+  var passwordtext = documnet.querySelector ('#password');
+  passwordtext.value = firstpassword;
+
+
 }
