@@ -9,20 +9,22 @@ var password = '';
 
 // Function to create random #password input
 
-
-function writePassword() {
   
 
   // Function to ask for password length 
-  var passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters)');
+function verifyLength() {
+  passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters)');
   if (passwordLength < 8 || passwordLength > 128);{
     alert ('Incorrect character length!\nA number between 8 and 128 must be entered.\nPlease start from the beginning');
-  }
+    verifyLength();
+  } 
+  return passwordLength;
+}
       
 
   // Function to ask for lowercase characters
-  if (passwordLength){
-    if (window.prompt ('Would you like to include lowercase characters?') === true)
+  else{
+    if (confirm ('Would you like to include lowercase characters?') === true)
         lowerCaseFunction == true
         if (lowerCaseFunction === false){
           alert ('Please select at least one character')
