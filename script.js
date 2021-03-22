@@ -45,7 +45,7 @@ function verifyLowerCase() {
 function verifyUpperCase(){
   confirmUpperCase = window.confirm ('Would you like to include uppercase characters?\nYes or No');
       
-  if (confirmUpperCase === "yes, y"){
+  if (confirmUpperCase === true){
       confirmUpperCase = true;
     }
 
@@ -63,7 +63,7 @@ function verifyUpperCase(){
 function verifySpecialChar (){
   confirmSpecialChar = window.confirm ('Would you like to include special characters?\nYes or No');
       
-  if (confirmSpecialChar === "yes, y"){
+  if (confirmSpecialChar === true){
     confirmSpecialChar = true;
     }
 
@@ -81,9 +81,8 @@ function verifySpecialChar (){
 function verifyNumbersChar (){
   confirmNumbersChar = window.confirm ('Would you like to include number characters?\nYes or No');
       
-  if (confirmNumbersChar === "yes, y"){
+  if (confirmNumbersChar === true){
     confirmNumbersChar = true;
-    return confirmNumbersChar;
   }
 
   else if (confirmNumbersChar === "no, n"){
