@@ -33,19 +33,21 @@ While creating this application I learnt the fundamental aspects of JavaScript. 
 
 During the creation I learnt value and how to correctly implement variables, arrays, functions, for loops, eventlisteners, and the best practices for naming variables and functions.
 
+This application has given me a base level understanding of JavaScript which I hope to continue to expand upon.
+
 
 ## Screenshots of user prompts
 
-![Generate-Password-Starting-Screen](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Generate-Password-Starting-screen.png)
+![Generate-Password-Starting-Screen](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Generate-Password-Starting-screen.png)
 
-![Password-length-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Password-length-prompt.png)
+![Password-length-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Password-length-prompt.png)
 
 ![Lowercase-characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Lowercase-characters-prompt.png)
 
-![Number-Character-Prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Number-Character-Prompt.png)
+![Number-Character-Prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Number-Character-Prompt.png)
 
-![Special-Characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Special-Characters-prompt.png)
+![Special-Characters-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Special-Characters-prompt.png)
 
-![Uppercase-characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Uppercase-characters-prompt.png)
+![Uppercase-characters-prompt](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/Uppercase-characters-prompt.png)
 
-![User-Password-Generated](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/User-Password-Generated.png)
+![User-Password-Generated](https://github.com/GeorgiaHunt89/Password-Generator/blob/main/assets/Images/User-Password-Generated.png)
