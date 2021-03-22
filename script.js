@@ -3,8 +3,9 @@
 var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special = '!@#$%^&*';
-var numnbers = '1234567890';
+var numbers = '1234567890';
 
+var password = [''];
 
 var generateBtn = document.querySelector("#generate");
 
