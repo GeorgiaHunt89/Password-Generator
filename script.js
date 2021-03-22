@@ -36,6 +36,18 @@ function writePassword() {
         }
   }
   
+   // Function to ask for uppercase characters
+    if (window.prompt ('Would you like to include uppercase characters?') === true)
+        upperCaseFunction == true
+        if (upperCaseFunction === false){
+          alert ('Please select at least one character')
+        }
+  }
+
+
+
+
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
