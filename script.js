@@ -5,27 +5,20 @@ var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special = '!@#$%^&*';
 var numbers = '1234567890';
 
-var password = [''];
-
-// Uppercase, Lowercase, numbers and Special icon Function Booleans
-
-var lowerCaseFunction = 'false'
-var upperCaseFunction = 'false'
-var specialFunction = 'false'
-var numbersFunction = 'false'
+var password = '';
 
 // Function to create random #password input
 
+
 function writePassword() {
-  var passwordLength = '';
+  
 
   // Function to ask for password length 
-  Const (passwordLength >= 8 && passwordLength <=128);{
-    passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters)'); 
-      if (passwordLength === undefined){
-        alert ('Incorrect character length, please enter a number between 8 and 128');
-      }
+  var passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters)');
+  if (passwordLength < 8 || passwordLength > 128);{
+    alert ('Incorrect character length!\nA number between 8 and 128 must be entered.\nPlease start from the beginning');
   }
+      
 
   // Function to ask for lowercase characters
   if (passwordLength){
@@ -50,7 +43,7 @@ function writePassword() {
    if (specialFunction === false){
      alert ('Please select at least one character')
    }
-}
+
 
  // Function to ask for number characters
     if (window.prompt ('Would you like to include number characters?') === true)
@@ -58,6 +51,6 @@ function writePassword() {
         if (numbersFunction === false){
           alert ('Please select at least one character')
         }
-  }
+  
 
   
