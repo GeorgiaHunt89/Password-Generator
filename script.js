@@ -34,12 +34,12 @@ function verifyUpperCase(){
 }
 
 // Function to ask for special characters
-function verifySpecialChar (){
+function verifySpecialChar(){
   confirmSpecialChar = window.confirm ('Would you like to include special characters?\nYes or No');
 }
 
 // Function to ask for numbers characters
-function verifyNumbersChar (){
+function verifyNumbersChar(){
   confirmNumbersChar = window.confirm ('Would you like to include number characters?\nYes or No');
 }
 
