@@ -29,7 +29,7 @@ function verifyLength() {
       
 
   // Function to ask for lowercase characters
-  function verifyLowerCase (){
+  function verifyLowerCase() {
     confirmLowerCase = window.prompt ('Would you like to include lowercase characters?\nYes or No');
       
   if (confirmLowerCase === "yes, y"){
@@ -113,7 +113,7 @@ function verifyLength() {
   }
 
   // Function to collate all previous results and generate a random password
-var userChoices {
+function allChars(){
   verifyLength ();
   console.log(passwordLength);
   verifyLowerCase();
@@ -124,7 +124,6 @@ var userChoices {
   console.log(confirmSpecialChar);
   verifyNumbersChar();
   console.log(confirmNumbersChar);
-
 }
 
 // For loop function used to generate password
@@ -139,14 +138,13 @@ return password;
 // Function to connect create Password to querySelector
 
 function createPassword (){
-  var firstpassword = "";
-  firstpassword = characters ();
+  var newpassword = "";
+  newpassword = characters ();
   var passwordtext = documnet.querySelector ('#password');
-  passwordtext.value = firstpassword;
+  passwordtext.value = newpassword;
 
 
   // Event Listener button
   generateBtn.addEventListener("Click", createPassword);
-
 
 }
