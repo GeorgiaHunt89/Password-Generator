@@ -36,3 +36,16 @@ During the creation I learnt value and how to correctly implement variables, arr
 
 ## Screenshots of user prompts
 
+![Generate-Password-Starting-Screen](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Generate-Password-Starting-screen.png)
+
+![Password-length-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Password-length-prompt.png)
+
+![Lowercase-characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Lowercase-characters-prompt.png)
+
+![Number-Character-Prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Number-Character-Prompt.png)
+
+![Special-Characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Special-Characters-prompt.png)
+
+![Uppercase-characters-prompt](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Uppercase-characters-prompt.png)
+
+![User-Password-Generated](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/User-Password-Generated.png)
