@@ -43,6 +43,27 @@ function verifyLength() {
     return confirmLowerCase;
   }
 
+  // Function to ask for uppercase characters
+  function verifyUpperCase (){
+    confirmUpperCase = window.prompt ('Would you like to include uppercase characters?\nYes or No');
+      
+  if (confirmUpperCase === "yes, y"){
+    confirmUpperCase = true;
+    return confirmUpperCase;
+  }
+
+  else if (confirmUpperCase === "no, n"){
+    confirmUpperCase = false;
+    return confirmUpperCase;
+  }
+
+  else {
+    alert ('Please answer Yes or No');
+    verifyUpperCase();
+  }
+    return confirmUpperCase;
+  }
+
    // Function to ask for special characters
    function verifySpecialChar (){
     confirmSpecialChar = window.prompt ('Would you like to include special characters?\nYes or No');
