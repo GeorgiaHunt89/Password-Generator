@@ -15,7 +15,7 @@ var userChoices = [];
 
 // Function to ask for password length 
 function verifyLength() {
-  passwordLength = window.prompt ('Please enter length of password, (must be between 8 and 128 characters.)');
+  passwordLength = parseInt(window.prompt('Please enter length of password, (must be between 8 and 128 characters.)'));
   if (passwordLength < 8 || passwordLength > 128){
     alert ('Incorrect character length!\nA number between 8 and 128 must be entered.\nPlease start from the beginning.');
     verifyLength();
@@ -26,75 +26,21 @@ function verifyLength() {
 // Function to ask for lowercase characters
 function verifyLowerCase() {
   confirmLowerCase = window.confirm ('Would you like to include lowercase characters?\nYes or No');
-      
-  if (confirmLowerCase === true){
-    confirmLowerCase = true;
-    }
-
-  else if (confirmLowerCase === false){
-    confirmLowerCase = false;
-    }
-
-  else {
-    alert ('Please answer Yes or No');
-    verifyLowerCase();
-    }
 }
 
 // Function to ask for uppercase characters
 function verifyUpperCase(){
   confirmUpperCase = window.confirm ('Would you like to include uppercase characters?\nYes or No');
-      
-  if (confirmUpperCase === true){
-      confirmUpperCase = true;
-    }
-
-  else if (confirmUpperCase === "no, n"){
-      confirmUpperCase = false;
-    }
-
-  else {
-      alert ('Please answer Yes or No');
-      verifyUpperCase();
-    }
 }
 
 // Function to ask for special characters
 function verifySpecialChar (){
   confirmSpecialChar = window.confirm ('Would you like to include special characters?\nYes or No');
-      
-  if (confirmSpecialChar === true){
-    confirmSpecialChar = true;
-    }
-
-  else if (confirmSpecialChar === "no, n"){
-    confirmSpecialChar = false;
-    }
-
-  else {
-    alert ('Please answer Yes or No');
-    verifySpecialChar();
-    }
 }
 
 // Function to ask for numbers characters
 function verifyNumbersChar (){
   confirmNumbersChar = window.confirm ('Would you like to include number characters?\nYes or No');
-      
-  if (confirmNumbersChar === true){
-    confirmNumbersChar = true;
-  }
-
-  else if (confirmNumbersChar === "no, n"){
-    confirmNumbersChar = false;
-    return confirmNumbersChar;
-  }
-
-  else {
-    alert ('Please answer Yes or No');
-    verifyNumbersChar();
-  }
-    return confirmNumbersChar;
 }
 
   // Function to collate all previous results and generate a random password
