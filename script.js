@@ -4,7 +4,6 @@ var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var special = '!@#$%^&*';
 var numbers = '1234567890';
-
 var password = '';
 
 // Function to create random #password input
@@ -107,7 +106,7 @@ function verifyLength() {
   }
 
   // Function to collate all previous results and generate a random password
-function createPassword(){
+function characters(){
   verifyLength ();
   console.log(passwordLength);
   verifyLowerCase();
@@ -118,4 +117,12 @@ function createPassword(){
   console.log(confirmSpecialChar);
   verifyNumbersChar();
   console.log(confirmNumbersChar);
+}
+
+// For loop function used to generate password
+function createPassword (passwordlenght, characters){
+  for(var i = 0; i < passwordLength; i++){
+  password += characters.charAt(Math.floor(Math.random() * characters.length)); 
+}
+return password;
 }
